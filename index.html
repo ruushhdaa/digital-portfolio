@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rushda Jagtap — Cyber Adversarial Analytics</title>
+<meta name="description" content="Portfolio of Rushda Jagtap — Security Data Scientist, Cyber Adversarial Analytics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="particle-canvas"></canvas>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<div id="progress-bar"></div>
+
+<nav id="main-nav">
+  <span class="nav-logo">R<span class="logo-dot">·</span>J</span>
+  <ul class="nav-links">
+    <li><a href="#identity">Identity</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#metrics">Metrics</a></li>
+    <li><a href="#timeline">Archive</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+  <a href="CV Resume.pdf" download="Rushda_Jagtap_Resume.pdf" class="resume-btn">
+    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17"/>
+    </svg>
+    Résumé
+  </a>
+  <span class="nav-status"><span class="status-pulse"></span> ACTIVE</span>
+</div>
+</nav>
+
+<!-- LANDING -->
+<section id="landing">
+  <div class="scan-line"></div>
+  <div class="folder-scene">
+    <div class="folder-tabs">
+      <div class="folder-tab active" data-target="identity">01 — Identity</div>
+      <div class="folder-tab" data-target="projects">02 — Projects</div>
+      <div class="folder-tab" data-target="metrics">03 — Metrics</div>
+      <div class="folder-tab" data-target="timeline">04 — Archive</div>
+      <div class="folder-tab" data-target="skills">05 — Skills</div>
+      <div class="folder-tab" data-target="contact">06 — Contact</div>
+    </div>
+
+    <div class="folder-card">
+      <div class="corner-accent top-left"></div>
+      <div class="corner-accent top-right"></div>
+      <div class="corner-accent bottom-left"></div>
+      <div class="corner-accent bottom-right"></div>
+
+      <div class="folder-header">
+        <div class="folder-stamp">
+          <div class="file-id glitch-text" data-text="FILE_001 // JAGTAP, R.">FILE_001 // JAGTAP, R.</div>
+          <div>Classification · Digital Portfolio</div>
+          <div>Indexed · 2026</div>
+        </div>
+        <div class="folder-header-right">
+          <div class="folder-classified">Adversarial</div>
+          <div class="barcode" aria-hidden="true">
+            <span style="height:28px"></span><span style="height:20px"></span><span style="height:28px"></span>
+            <span style="height:24px"></span><span style="height:28px"></span><span style="height:16px"></span>
+            <span style="height:28px"></span><span style="height:24px"></span><span style="height:20px"></span>
+            <span style="height:28px"></span><span style="height:24px"></span><span style="height:28px"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="folder-name" id="folderName">
+        <span class="char-reveal">R</span><span class="char-reveal">u</span><span class="char-reveal">s</span><span class="char-reveal">h</span><span class="char-reveal">d</span><span class="char-reveal">a</span>
+        <br>
+        <em><span class="char-reveal">J</span><span class="char-reveal">a</span><span class="char-reveal">g</span><span class="char-reveal">t</span><span class="char-reveal">a</span><span class="char-reveal">p</span></em>
+      </div>
+      <div class="folder-tagline">
+        <span class="typewriter" id="mainTagline"></span><span class="typed-cursor"></span>
+      </div>
+
+      <div class="folder-meta" id="folderMeta">
+        <div class="meta-row stagger-in"><span class="meta-label">Institution</span><span class="meta-val">MITAOE, Alandi — Pune</span></div>
+        <div class="meta-row stagger-in">
+  <span class="meta-label">Current CGPA</span>
+  <div class="cgpa-live">
+    <div class="cgpa-track">
+      <div class="cgpa-fill" id="cgpaFill"></div>
+      <div class="cgpa-marker" id="cgpaMarker">
+        <span class="cgpa-value">9.1</span>
+      </div>
+    </div>
+    <div class="cgpa-range">
+      <span>0</span>
+      <span class="cgpa-sem-tag">SEM I — CLIMBING</span>
+      <span>10</span>
+    </div>
+  </div>
+</div>
+        <div class="meta-row stagger-in"><span class="meta-label">Specialisation</span><span class="meta-val">B.Tech CSE — Data Science</span></div>
+        <div class="meta-row stagger-in">
+  <span class="meta-label">Validity</span>
+  <div class="card-validity">
+    <div class="validity-block">
+      <span class="validity-label">VALID FROM</span>
+      <span class="validity-year">2025</span>
+    </div>
+    <div class="validity-thru">THRU</div>
+    <div class="validity-block">
+      <span class="validity-label">VALID THRU</span>
+      <span class="validity-year">2029</span>
+    </div>
+  </div>
+</div>
+        <div class="meta-row stagger-in"><span class="meta-label">LinkedIn</span><span class="meta-val">in/rushda-jagtap</span></div>
+        <div class="meta-row stagger-in"><span class="meta-label">GitHub</span><span class="meta-val">github/ruushhdaa</span></div>
+      </div>
+
+      <div class="folder-footer">
+  <div class="archive-code">ARCH-2026-RJ · © RUSHDA JAGTAP · ALL RIGHTS RESERVED</div>
+  <a href="CV Resume.pdf" download="Rushda_Jagtap_Resume.pdf" class="resume-btn-folder">
+    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17"/>
+    </svg>
+    Download Résumé
+  </a>
+  <div class="scroll-hint">
+          <span>Scroll to open</span>
+          <svg class="scroll-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IDENTITY -->
+<section id="identity">
+  <div class="container">
+    <div class="section-label"><span class="label-num">02</span> <span class="label-text">Identity</span></div>
+    <div class="section-line"></div>
+    <div class="identity-grid">
+      <div class="reveal">
+        <h2 class="identity-heading">I build systems that<br><em>intercept threats</em><br>before they land.</h2>
+        <p class="identity-desc">First-year B.Tech CSE (Data Science) student operating entirely outside the campus-placement ecosystem. My niche is Cyber Adversarial Analytics — ML and cybersecurity treated not as separate fields, but as a unified craft aimed at predictive threat interception.</p>
+        <div class="status-ticker">
+          <div class="ticker-header">// Live Status</div>
+          <div class="ticker-row"><span class="ticker-dot"></span><span class="ticker-label">Building</span><span class="ticker-val">Anomaly Hunter — CIC-IDS2017 upgrade</span></div>
+          <div class="ticker-row"><span class="ticker-dot amber"></span><span class="ticker-label">Reading</span><span class="ticker-val">CIC-IDS2017 dataset documentation</span></div>
+          <div class="ticker-row"><span class="ticker-dot dim"></span><span class="ticker-label">Target</span><span class="ticker-val">GSoC 2027 — OWASP / Honeynet Project</span></div>
+          <div class="ticker-row"><span class="ticker-dot dim"></span><span class="ticker-label">Target</span><span class="ticker-val">IEEE ICCCE research publication</span></div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <div class="stats-stack">
+          <div class="stat-card">
+            <span class="stat-num" data-counter="true" data-target="99.91" data-suffix="%" data-decimals="2">0%</span>
+            <span class="stat-unit">Detection accuracy</span>
+            <div class="stat-glow"></div>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-counter="true" data-target="590" data-suffix="K+">0</span>
+            <span class="stat-unit">Transactions analyzed</span>
+            <div class="stat-glow"></div>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-counter="true" data-target="6" data-suffix="">0</span>
+            <span class="stat-unit">Security systems built</span>
+            <div class="stat-glow"></div>
+          </div>
+          <div class="stat-card cgpa-stat-card">
+  <div class="stat-left">
+    <span class="stat-num" data-counter="true" data-target="9.1" data-suffix="" data-decimals="1">0</span>
+    <span class="stat-unit">CGPA — Semester I</span>
+  </div>
+  <div class="cgpa-trajectory">
+    <svg width="80" height="32" viewBox="0 0 80 32" fill="none" class="trajectory-svg">
+      <path d="M0 28 Q20 26 30 20 T50 12 T80 2" stroke="rgba(192,39,63,0.5)" stroke-width="1.5" fill="none" class="trajectory-line"/>
+      <circle cx="30" cy="20" r="3" fill="#c0273f" class="trajectory-dot current-dot">
+        <animate attributeName="r" values="3;4.5;3" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="50" cy="12" r="2" fill="rgba(192,39,63,0.3)" class="trajectory-dot"/>
+      <circle cx="70" cy="5" r="2" fill="rgba(192,39,63,0.15)" class="trajectory-dot"/>
+    </svg>
+    <span class="trajectory-label">↗ TRAJECTORY</span>
+  </div>
+  <div class="stat-glow"></div>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="section-label"><span class="label-num">03</span> <span class="label-text">Projects</span></div>
+    <div class="section-line"></div>
+
+    <!-- NIDS -->
+    <div class="project-card reveal">
+      <div class="project-glow"></div>
+      <div class="project-header">
+        <div>
+          <div class="project-number">01</div>
+          <div class="project-title">NIDS Deep Learning Engine</div>
+          <div class="project-subtitle">Network Intrusion Detection System · CT Lab Final Project</div>
+        </div>
+        <div class="project-tags">
+          <span class="tag">1D CNN</span><span class="tag">TensorFlow</span><span class="tag">KDD Cup 1999</span><span class="tag">Multi-class</span>
+        </div>
+      </div>
+      <div class="project-metrics">
+        <div class="metric">
+          <span class="metric-val">99.91%</span>
+          <span class="metric-label">Accuracy</span>
+          <div class="metric-bar"><div class="metric-fill" style="--fill-width:99.91%"></div></div>
+        </div>
+        <div class="metric"><span class="metric-val">156,805</span><span class="metric-label">Parameters</span></div>
+        <div class="metric"><span class="metric-val">494K</span><span class="metric-label">Training records</span></div>
+        <div class="metric"><span class="metric-val">5-class</span><span class="metric-label">Softmax output</span></div>
+      </div>
+      <div class="arch-row">
+        <span class="arch-input">Input(41×1)</span><span class="arch-arrow">→</span>
+        <span class="arch-node">Conv1D(64)</span><span class="arch-arrow">→</span>
+        <span class="arch-node">MaxPool</span><span class="arch-arrow">→</span>
+        <span class="arch-node">Conv1D(128)</span><span class="arch-arrow">→</span>
+        <span class="arch-node">MaxPool</span><span class="arch-arrow">→</span>
+        <span class="arch-node">Flatten</span><span class="arch-arrow">→</span>
+        <span class="arch-node">Dense(128)</span><span class="arch-arrow">→</span>
+        <span class="arch-node">Dropout(0.3)</span><span class="arch-arrow">→</span>
+        <span class="arch-node arch-output">Softmax(5)</span>
+      </div>
+      <div class="project-insight">
+        <div class="insight-label">⟐ Key Insight</div>
+        Identified U2R precision drop (82%) as a dataset statistical artifact — only 12 test samples for that class — rather than a model failure. Perfect precision/recall achieved for DoS and Normal traffic.
+      </div>
+      <p class="project-desc">Real-world network traffic classification engine built to catch zero-day and dynamic attacks. Compiled with Adam optimizer and sparse categorical crossentropy loss. Role: Lead Architect — designed, built, and evaluated the full pipeline.</p>
+      <div class="project-links">
+        <a href="https://github.com/ruushhdaa/NIDS-Deep-Learning-Engine" target="_blank" rel="noopener noreferrer" class="proj-btn primary">→ GitHub</a>
+        <a href="#" class="proj-btn">Architecture Notes</a>
+      </div>
+    </div>
+
+    <!-- SATARK -->
+    <div class="project-card reveal">
+      <div class="project-glow"></div>
+      <div class="project-header">
+        <div>
+          <div class="project-number">02</div>
+          <div class="project-title">SATARK</div>
+          <div class="project-subtitle">Smart Active Tracking And Recovery Key · Design Thinking Lab</div>
+        </div>
+        <div class="project-tags">
+          <span class="tag">Flask</span><span class="tag">SQLite</span><span class="tag">React</span><span class="tag">Honeypot</span><span class="tag">QR</span>
+        </div>
+      </div>
+      <p class="project-desc">Cyber-physical identity verification system replacing physical documents with a single smart PVC card. Two operational modes — Active Defense (SAFE) and Passive Trap (LOST) — built on a Python Flask backend with dynamic state-changing QR codes.</p>
+      <div class="mode-grid">
+        <div class="mode-card mode-safe">
+          <div class="mode-title"><span class="mode-dot-safe"></span> SAFE Mode</div>
+          <div class="mode-desc">Dynamic QR scan triggers push notification to owner — Allow/Deny. Verifier gets temporary 2-minute access window, then auto-expires and auto-deletes from their system.</div>
+        </div>
+        <div class="mode-card mode-lost">
+          <div class="mode-title"><span class="mode-dot-lost"></span> LOST Mode</div>
+          <div class="mode-desc">Stolen card scan shows fake "Verification Successful" to thief. Silently captures GPS coordinates, IP address, and device fingerprint — pings owner immediately.</div>
+        </div>
+      </div>
+      <div class="project-insight">
+        <div class="insight-label">⟐ Tagline</div>
+        Satark Raho, Surakshit Raho. — Shortlisted for PCMC Police-sponsored project (Nigarani).
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/parthshewaleedu-arch/secure-digital-id" target="_blank" rel="noopener noreferrer" class="proj-btn primary">→ GitHub</a>
+      </div>
+    </div>
+
+    <!-- TrustSentinel -->
+    <div class="project-card reveal">
+      <div class="project-glow"></div>
+      <div class="project-header">
+        <div>
+          <div class="project-number">03</div>
+          <div class="project-title">TrustSentinel</div>
+          <div class="project-subtitle">Live UPI Fraud Detection Engine · Datathon 2026</div>
+        </div>
+        <div class="project-tags">
+          <span class="tag">Random Forest</span><span class="tag">SMOTE</span><span class="tag">SHAP</span><span class="tag">Streamlit</span><span class="tag">IEEE-CIS</span>
+        </div>
+      </div>
+      <div class="project-metrics">
+        <div class="metric">
+          <span class="metric-val">98%</span>
+          <span class="metric-label">Accuracy</span>
+          <div class="metric-bar"><div class="metric-fill" style="--fill-width:98%"></div></div>
+        </div>
+        <div class="metric"><span class="metric-val">590K</span><span class="metric-label">Real transactions</span></div>
+        <div class="metric"><span class="metric-val">118K</span><span class="metric-label">Unseen test records</span></div>
+        <div class="metric"><span class="metric-val">2-tier</span><span class="metric-label">Detection system</span></div>
+      </div>
+      <p class="project-desc">Live UPI fraud detection utilizing individual behavioral profiling per card — not global averages. Two-tier system: hard rules (Tier 1) + Random Forest with SMOTE balancing (Tier 2). SHAP integration provides plain-English explanations of every flagged transaction.</p>
+      <div class="project-insight">
+        <div class="insight-label">⟐ Design Philosophy</div>
+        Per-card behavioral baselines outperform population-level averages. A flagged transaction is meaningless without an interpretable reason — SHAP makes every decision explainable.
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/ruushhdaa/TrustSentinel" target="_blank" rel="noopener noreferrer" class="proj-btn primary">→ GitHub</a>
+        </div>
+    </div>
+
+    <!-- SHURI -->
+    <div class="project-card reveal">
+      <div class="project-glow"></div>
+      <div class="project-header">
+        <div>
+          <div class="project-number">04</div>
+          <div class="project-title">SHURI</div>
+          <div class="project-subtitle">LAN IoT Threat Detection · VELORA 1.0 — April 2026</div>
+        </div>
+        <div class="project-tags">
+          <span class="tag">Nmap</span><span class="tag">Honeypots</span><span class="tag">MITRE ATT&CK</span><span class="tag">Flask</span><span class="tag">React</span>
+        </div>
+      </div>
+      <p class="project-desc">LAN-deployed IoT threat detection system designed for low-compute hardware — runs locally on a laptop or Raspberry Pi with zero cloud dependency. Honeypots across Telnet, HTTP, MQTT, and SSH protocols. Custom "Blast Radius" scoring assesses network-wide impact rather than isolated per-device CVSS scores.</p>
+      <div class="project-insight">
+        <div class="insight-label">⟐ Framework Mapping</div>
+        Every detected threat is mapped to CVEs, the OWASP IoT Top 10, and MITRE ATT&CK — providing context beyond a raw score. Flask API + React dashboard for real-time visibility.
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/mapaski/shuri" target="_blank" rel="noopener noreferrer" class="proj-btn primary">→ GitHub</a>
+        </div>
+    </div>
+
+    <!-- DEE Logic Gate -->
+    <div class="project-card reveal">
+      <div class="project-glow"></div>
+      <div class="project-header">
+        <div>
+          <div class="project-number">05</div>
+          <div class="project-title">Logic Gate Architecture</div>
+          <div class="project-subtitle">Digital Electronics Engineering · Hardware Lab Project</div>
+        </div>
+        <div class="project-tags">
+          <span class="tag">AND</span><span class="tag">OR</span><span class="tag">NOT</span><span class="tag">NAND</span><span class="tag">XOR</span>
+        </div>
+      </div>
+      <p class="project-desc">Hardware-level electronic gate system implementing all fundamental logic circuits. Physical breadboard construction using 7400-series ICs with truth table verification, K-map simplification, and Boolean algebra reduction.</p>
+      <div class="gate-visual" id="gateVisual">
+        <div class="gate-row">
+          <div class="gate-chip">
+            <span class="gate-label">7408</span>
+            <span class="gate-type">AND</span>
+            <div class="gate-pins">
+              <span class="pin active"></span><span class="pin active"></span><span class="pin output active"></span>
+            </div>
+          </div>
+          <div class="gate-chip">
+            <span class="gate-label">7432</span>
+            <span class="gate-type">OR</span>
+            <div class="gate-pins">
+              <span class="pin active"></span><span class="pin"></span><span class="pin output active"></span>
+            </div>
+          </div>
+          <div class="gate-chip">
+            <span class="gate-label">7404</span>
+            <span class="gate-type">NOT</span>
+            <div class="gate-pins">
+              <span class="pin active"></span><span class="pin output"></span>
+            </div>
+          </div>
+          <div class="gate-chip">
+            <span class="gate-label">7400</span>
+            <span class="gate-type">NAND</span>
+            <div class="gate-pins">
+              <span class="pin active"></span><span class="pin active"></span><span class="pin output"></span>
+            </div>
+          </div>
+          <div class="gate-chip">
+            <span class="gate-label">7486</span>
+            <span class="gate-type">XOR</span>
+            <div class="gate-pins">
+              <span class="pin active"></span><span class="pin"></span><span class="pin output active"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project-insight">
+        <div class="insight-label">⟐ Why This Matters</div>
+        Every neural network, every intrusion detection system runs on hardware that reduces to these gates. Understanding the physical layer isn't optional — it's the foundation. K-map optimisation taught me the same instinct I apply to model architecture: eliminate redundancy, minimise complexity.
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/ruushhdaa" target="_blank" rel="noopener noreferrer" class="proj-btn primary">→ GitHub</a>
+        <a href="#" class="proj-btn">Documentation</a>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div class="project-card reveal">
+      <div class="project-glow"></div>
+      <div class="project-header">
+        <div>
+          <div class="project-number">06</div>
+          <div class="project-title">This Portfolio</div>
+          <div class="project-subtitle">Custom Digital Portfolio · Pure HTML/CSS/JS</div>
+        </div>
+        <div class="project-tags">
+          <span class="tag">Vanilla JS</span><span class="tag">Canvas API</span><span class="tag">CSS Grid</span><span class="tag">Zero Frameworks</span>
+        </div>
+      </div>
+      <p class="project-desc">Self-coded professional hub built with zero frameworks. Custom particle system via Canvas API. Scroll-reveal using Intersection Observer. Fluid responsive typography with CSS clamp(). Custom cursor, counter animations, typewriter effects — all hand-written.</p>
+      <div class="project-links">
+        <a href="https://github.com/ruushhdaa" target="_blank" rel="noopener noreferrer" class="proj-btn primary">→ Source</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- QUOTE -->
+<div class="quote-section">
+  <div class="quote-decoration">❖</div>
+  <p class="quote-text reveal">"Precision in logic.<br><em>Ruthlessness</em> in defense."</p>
+  <div class="quote-decoration">❖</div>
+</div>
+
+<!-- METRICS -->
+<section id="metrics">
+  <div class="container">
+    <div class="section-label"><span class="label-num">04</span> <span class="label-text">Metrics</span></div>
+    <div class="section-line"></div>
+  </div>
+  <div class="metrics-container">
+    <div class="metrics-grid">
+      <div class="metrics-cell reveal">
+        <div class="m-bg-text" aria-hidden="true">99</div>
+        <div class="m-num" data-counter="true" data-target="99.91" data-suffix="%" data-decimals="2">0%</div>
+        <div class="m-label">Detection Accuracy</div>
+        <div class="m-sublabel">NIDS on KDD Cup 1999 · 10-epoch training</div>
+        <div class="metrics-cell-glow"></div>
+      </div>
+      <div class="metrics-cell reveal reveal-delay-1">
+        <div class="m-bg-text" aria-hidden="true">590K</div>
+        <div class="m-num" data-counter="true" data-target="590" data-suffix="K+">0</div>
+        <div class="m-label">Transactions Analyzed</div>
+        <div class="m-sublabel">IEEE-CIS dataset · TrustSentinel</div>
+        <div class="metrics-cell-glow"></div>
+      </div>
+      <div class="metrics-cell reveal reveal-delay-2">
+        <div class="m-bg-text" aria-hidden="true">6</div>
+        <div class="m-num" data-counter="true" data-target="6" data-suffix="">0</div>
+        <div class="m-label">Systems Built</div>
+        <div class="m-sublabel">NIDS · SATARK · TrustSentinel · SHURI · DEE · Portfolio</div>
+        <div class="metrics-cell-glow"></div>
+      </div>
+      <div class="metrics-cell reveal reveal-delay-3">
+  <div class="m-bg-text" aria-hidden="true">9.1</div>
+  <div class="m-num" data-counter="true" data-target="9.1" data-suffix="" data-decimals="1">0</div>
+  <div class="m-label">CGPA — Semester I</div>
+  <div class="m-sublabel">Sem I of VIII · Baseline established · Climbing</div>
+  <div class="m-progress-row">
+    <div class="m-progress-track">
+      <div class="m-progress-fill" style="--progress:12.5%"></div>
+      <div class="m-progress-future" style="--start:12.5%"></div>
+    </div>
+    <span class="m-progress-label">1/8 semesters completed</span>
+  </div>
+  <div class="metrics-cell-glow"></div>
+</div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section id="timeline">
+  <div class="container">
+    <div class="section-label"><span class="label-num">05</span> <span class="label-text">Archive</span></div>
+    <div class="section-line"></div>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-date">Apr 2026</div>
+        <div class="timeline-body">
+          <div class="timeline-title">VELORA 1.0 Hackathon</div>
+          <div class="timeline-org">Pitch: SHURI — LAN IoT Threat Detection</div>
+          <div class="timeline-desc">Presented SHURI, the LAN-deployed IoT threat detection engine with custom Blast Radius scoring, honeypots, and MITRE ATT&CK mapping.</div>
+          <span class="timeline-outcome outcome-success timeline-cert" data-cert="certs/velora-participation.pdf" data-cert-title="VELORA 1.0 — Participation Certificate">Presented · View Cert ↗</span>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-date">2026</div>
+        <div class="timeline-body">
+          <div class="timeline-title">Nigarani — PCMC Police Project</div>
+          <div class="timeline-org">Presented: TrustSentinel + SHURI via Google Meet</div>
+          <div class="timeline-desc">Shortlisted for a PCMC Police-sponsored project. Presented both TrustSentinel and SHURI to evaluators.</div>
+          <span class="timeline-outcome outcome-shortlisted">Shortlisted</span>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-date">2026</div>
+        <div class="timeline-body">
+          <div class="timeline-title">Datathon 2026</div>
+          <div class="timeline-org">Pitch: TrustSentinel</div>
+          <div class="timeline-desc">Pitched the TrustSentinel fraud detection engine. Lost Round 1 due to teammate presentation error — not a technical failure.</div>
+          <span class="timeline-outcome outcome-r1 timeline-cert" data-cert="certs/datathon-participation.pdf" data-cert-title="Datathon 2026 — Participation Certificate">Lost R1 · View Cert ↗</span>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-date">2025–26</div>
+        <div class="timeline-body">
+          <div class="timeline-title">NIDS — CT Lab Final Project</div>
+          <div class="timeline-org">Lead Architect · 99.91% Accuracy</div>
+          <div class="timeline-desc">Designed and built the full 1D CNN pipeline on KDD Cup 1999 dataset. Identified statistical artifacts in U2R class.</div>
+          <span class="timeline-outcome outcome-success">Faculty Presented</span>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-date">2025–26</div>
+        <div class="timeline-body">
+          <div class="timeline-title">Logic Gate Architecture — DEE Lab</div>
+          <div class="timeline-org">Hardware Project · 7400-Series ICs</div>
+          <div class="timeline-desc">Built all fundamental logic gate circuits on physical breadboards. Verified truth tables, applied K-map simplification.</div>
+          <span class="timeline-outcome outcome-success">Lab Completed</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="certs-section">
+      <div class="certs-header">// Certifications</div>
+      <div class="cert-grid">
+  <div class="cert-card reveal" data-cert="certs/ibm-ai-fundamentals.pdf" data-cert-title="IBM AI Fundamentals">
+    <div class="cert-icon">IBM</div>
+    <div>
+      <div class="cert-name">AI Fundamentals</div>
+      <div class="cert-issuer">IBM</div>
+    </div>
+    <span class="cert-view-tag">View ↗</span>
+  </div>
+  <div class="cert-card reveal reveal-delay-1" data-cert="certs/nasscom-digital-engineering.pdf" data-cert-title="NASSCOM × MeitY Digital Engineering 101">
+    <div class="cert-icon small-text">NASS<br>COM</div>
+    <div>
+      <div class="cert-name">Digital Engineering 101</div>
+      <div class="cert-issuer">NASSCOM × MeitY</div>
+    </div>
+    <span class="cert-view-tag">View ↗</span>
+  </div>
+  <div class="cert-card reveal reveal-delay-2" data-cert="certs/cisco-python.pdf" data-cert-title="Cisco Python Essentials 1 & 2">
+    <div class="cert-icon">CSCO</div>
+    <div>
+      <div class="cert-name">Python Essentials 1 & 2</div>
+      <div class="cert-issuer">Cisco</div>
+    </div>
+    <span class="cert-view-tag">View ↗</span>
+  </div>
+  <div class="cert-card reveal reveal-delay-3" data-cert="certs/anthropic-ai-fluency.pdf" data-cert-title="Anthropic AI Fluency Suite">
+    <div class="cert-icon small-text">ANTH<br>ROPIC</div>
+    <div>
+      <div class="cert-name">AI Fluency Suite</div>
+      <div class="cert-issuer">Anthropic</div>
+    </div>
+    <span class="cert-view-tag">View ↗</span>
+  </div>
+</div>
+
+<!-- Certificate Modal -->
+<div class="cert-modal" id="certModal">
+  <div class="cert-modal-backdrop" id="certModalBackdrop"></div>
+  <div class="cert-modal-content">
+    <div class="cert-modal-header">
+      <span class="cert-modal-title" id="certModalTitle">Certificate</span>
+      <button class="cert-modal-close" id="certModalClose">✕</button>
+    </div>
+    <div class="cert-modal-body" id="certModalBody">
+  <!-- Content inserted by JS -->
+</div>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="section-label"><span class="label-num">06</span> <span class="label-text">Skills</span></div>
+    <div class="section-line"></div>
+  </div>
+  <div class="skills-container">
+    <div class="skills-grid">
+      <div class="skill-group reveal">
+        <div class="skill-group-label">ML / AI</div>
+        <div class="skill-list">
+          <div class="skill-item">TensorFlow · Keras</div>
+          <div class="skill-item">Scikit-learn</div>
+          <div class="skill-item">SHAP (Explainability)</div>
+          <div class="skill-item">SMOTE (Class Balancing)</div>
+          <div class="skill-item">Random Forest · 1D CNN</div>
+          <div class="skill-item">Isolation Forests</div>
+        </div>
+      </div>
+      <div class="skill-group reveal reveal-delay-1">
+        <div class="skill-group-label">Cybersecurity</div>
+        <div class="skill-list">
+          <div class="skill-item">Nmap · Network Scanning</div>
+          <div class="skill-item">Honeypot Deployment</div>
+          <div class="skill-item">MITRE ATT&CK Framework</div>
+          <div class="skill-item">OWASP IoT Top 10</div>
+          <div class="skill-item">CVE Mapping</div>
+          <div class="skill-item">Threat Intelligence</div>
+        </div>
+      </div>
+      <div class="skill-group reveal reveal-delay-2">
+        <div class="skill-group-label">Languages</div>
+        <div class="skill-list">
+          <div class="skill-item">Python</div>
+          <div class="skill-item">C++</div>
+          <div class="skill-item">JavaScript</div>
+          <div class="skill-item">SQL</div>
+          <div class="skill-item">HTML · CSS</div>
+        </div>
+      </div>
+      <div class="skill-group reveal reveal-delay-3">
+        <div class="skill-group-label">Tools & Frameworks</div>
+        <div class="skill-list">
+          <div class="skill-item">Flask · Streamlit</div>
+          <div class="skill-item">React</div>
+          <div class="skill-item">SQLite</div>
+          <div class="skill-item">Git · GitHub</div>
+          <div class="skill-item">Linux WSL</div>
+          <div class="skill-item">Google Colab</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="section-label"><span class="label-num">07</span> <span class="label-text">Contact</span></div>
+    <div class="section-line"></div>
+    <div class="contact-inner reveal">
+      <div class="corner-accent top-left"></div>
+      <div class="corner-accent top-right"></div>
+      <div class="corner-accent bottom-left"></div>
+      <div class="corner-accent bottom-right"></div>
+      <h2 class="contact-heading">Intercept<br><em>me at:</em></h2>
+      <div class="contact-code">// rushdajagtap07@gmail.com</div>
+      <div class="contact-links">
+        <a href="mailto:rushdajagtap07@gmail.com" class="contact-link"><span class="cl-icon">✉</span> Mail <span class="cl-arrow">→</span></a>
+        <a href="https://www.linkedin.com/in/rushda-jagtap/" target="_blank" rel="noopener noreferrer" class="contact-link"><span class="cl-icon">in</span> LinkedIn <span class="cl-arrow">→</span></a>
+        <a href="https://github.com/ruushhdaa" target="_blank" rel="noopener noreferrer" class="contact-link"><span class="cl-icon">⟨/⟩</span> GitHub <span class="cl-arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>Rushda Jagtap — Cyber Adversarial Analytics</span>
+  <span>FILE_001 // © 2026</span>
+  <span>MITAOE · Pune · IN</span>
+</footer>
+
+<script>
+(function() {
+  'use strict';
+
+  // ══════════════ PARTICLE CANVAS ══════════════
+  var canvas = document.getElementById('particle-canvas');
+  if (canvas) {
+    var ctx = canvas.getContext('2d');
+    var particles = [];
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+    function Particle() {
+      this.x = Math.random() * canvas.width;
+      this.y = Math.random() * canvas.height;
+      this.size = Math.random() * 1.5 + 0.3;
+      this.speedX = (Math.random() - 0.5) * 0.3;
+      this.speedY = (Math.random() - 0.5) * 0.3;
+      this.opacity = Math.random() * 0.35 + 0.1;
+      this.pulseSpeed = Math.random() * 0.02 + 0.005;
+      this.pulseOffset = Math.random() * Math.PI * 2;
+      this.currentOpacity = this.opacity;
+    }
+
+    Particle.prototype.update = function(time) {
+      this.x += this.speedX;
+      this.y += this.speedY;
+      if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+      if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+      this.currentOpacity = this.opacity * (0.5 + 0.5 * Math.sin(time * this.pulseSpeed + this.pulseOffset));
+    };
+
+    Particle.prototype.draw = function() {
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(139, 26, 46, ' + this.currentOpacity + ')';
+      ctx.fill();
+    };
+
+    for (var i = 0; i < 60; i++) {
+      particles.push(new Particle());
+    }
+
+    var animTime = 0;
+    function animateParticles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      animTime++;
+      for (var i = 0; i < particles.length; i++) {
+        particles[i].update(animTime);
+        particles[i].draw();
+      }
+      // Connect nearby particles
+      for (var a = 0; a < particles.length; a++) {
+        for (var b = a + 1; b < particles.length; b++) {
+          var dx = particles[a].x - particles[b].x;
+          var dy = particles[a].y - particles[b].y;
+          var dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 120) {
+            ctx.beginPath();
+            ctx.moveTo(particles[a].x, particles[a].y);
+            ctx.lineTo(particles[b].x, particles[b].y);
+            ctx.strokeStyle = 'rgba(139, 26, 46, ' + (0.06 * (1 - dist / 120)) + ')';
+            ctx.lineWidth = 0.5;
+            ctx.stroke();
+          }
+        }
+      }
+      requestAnimationFrame(animateParticles);
+    }
+    animateParticles();
+  }
+
+  // ══════════════ CUSTOM CURSOR ══════════════
+  var dot = document.getElementById('cursorDot');
+  var ring = document.getElementById('cursorRing');
+  var cursorX = 0, cursorY = 0, ringX = 0, ringY = 0;
+
+  if (dot && ring) {
+    document.addEventListener('mousemove', function(e) {
+      cursorX = e.clientX;
+      cursorY = e.clientY;
+      dot.style.left = (cursorX - 3) + 'px';
+      dot.style.top = (cursorY - 3) + 'px';
+    });
+
+    function animateRing() {
+      ringX += (cursorX - ringX) * 0.12;
+      ringY += (cursorY - ringY) * 0.12;
+      ring.style.left = (ringX - 16) + 'px';
+      ring.style.top = (ringY - 16) + 'px';
+      requestAnimationFrame(animateRing);
+    }
+    animateRing();
+
+    // Expand on interactive hover
+    var interactives = document.querySelectorAll('a, button, .folder-tab, .proj-btn, .contact-link');
+    for (var i = 0; i < interactives.length; i++) {
+      interactives[i].addEventListener('mouseenter', function() {
+        ring.style.width = '48px';
+        ring.style.height = '48px';
+        ring.style.borderColor = 'rgba(192,39,63,0.6)';
+      });
+      interactives[i].addEventListener('mouseleave', function() {
+        ring.style.width = '32px';
+        ring.style.height = '32px';
+        ring.style.borderColor = 'rgba(192,39,63,0.35)';
+      });
+    }
+  }
+
+  // ══════════════ PROGRESS BAR ══════════════
+  var progressBar = document.getElementById('progress-bar');
+  window.addEventListener('scroll', function() {
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    if (h > 0 && progressBar) {
+      progressBar.style.width = (window.scrollY / h * 100) + '%';
+    }
+  }, { passive: true });
+
+  // ══════════════ SCROLL REVEAL ══════════════
+  var revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var revealObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.06, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(function(el) { revealObserver.observe(el); });
+  } else {
+    // Fallback: show everything
+    revealEls.forEach(function(el) { el.classList.add('visible'); });
+  }
+
+  // ══════════════ CHAR REVEAL (NAME) ══════════════
+  var folderName = document.getElementById('folderName');
+  if (folderName) {
+    var chars = folderName.querySelectorAll('.char-reveal');
+    // Trigger after a short delay
+    setTimeout(function() {
+      chars.forEach(function(ch, i) {
+        setTimeout(function() { ch.classList.add('char-visible'); }, i * 70 + 100);
+      });
+    }, 300);
+  }
+
+  // ══════════════ STAGGER IN (FOLDER META) ══════════════
+  var folderMeta = document.getElementById('folderMeta');
+  if (folderMeta) {
+    var staggerItems = folderMeta.querySelectorAll('.stagger-in');
+    setTimeout(function() {
+      staggerItems.forEach(function(item, i) {
+        setTimeout(function() { item.classList.add('stagger-visible'); }, i * 120 + 800);
+      });
+    }, 500);
+  }
+
+  // ══════════════ TYPEWRITER ══════════════
+  var taglineEl = document.getElementById('mainTagline');
+  if (taglineEl) {
+    var taglineText = 'Cyber Adversarial Analytics  ·  Security Data Science';
+    var charIndex = 0;
+    setTimeout(function() {
+      function typeNext() {
+        if (charIndex < taglineText.length) {
+          taglineEl.textContent += taglineText.charAt(charIndex);
+          charIndex++;
+          setTimeout(typeNext, 40 + Math.random() * 35);
+        }
+      }
+      typeNext();
+    }, 1400);
+  }
+
+  // ══════════════ COUNTER ANIMATION ══════════════
+  function animateCounter(el) {
+    var target = parseFloat(el.getAttribute('data-target'));
+    var suffix = el.getAttribute('data-suffix') || '';
+    var decimals = parseInt(el.getAttribute('data-decimals')) || 0;
+    var duration = 2000;
+    var startTime = null;
+    var started = false;
+
+    function step(timestamp) {
+      if (!startTime) startTime = timestamp;
+      var progress = Math.min((timestamp - startTime) / duration, 1);
+      // Ease out cubic
+      var ease = progress < 0.5 ? 4 * progress * progress * progress : (progress - 1) * (2 * progress - 2) * (2 * progress - 2) + 1;
+      var val = target * ease;
+      if (decimals > 0) {
+        el.textContent = val.toFixed(decimals) + suffix;
+      } else {
+        el.textContent = Math.floor(val) + suffix;
+      }
+      if (progress < 1) {
+        requestAnimationFrame(step);
+      } else {
+        if (decimals > 0) {
+          el.textContent = target.toFixed(decimals) + suffix;
+        } else {
+          el.textContent = target + suffix;
+        }
+      }
+    }
+    requestAnimationFrame(step);
+  }
+
+  var counterEls = document.querySelectorAll('[data-counter="true"]');
+  if ('IntersectionObserver' in window) {
+    var counterObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) {
+          animateCounter(e.target);
+          counterObserver.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    counterEls.forEach(function(el) { counterObserver.observe(el); });
+  } else {
+    counterEls.forEach(function(el) { animateCounter(el); });
+  }
+
+  // ══════════════ METRIC BAR FILL ══════════════
+  var metricFills = document.querySelectorAll('.metric-fill');
+  if ('IntersectionObserver' in window) {
+    var barObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('bar-animate');
+          barObserver.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    metricFills.forEach(function(el) { barObserver.observe(el); });
+  } else {
+    metricFills.forEach(function(el) { el.classList.add('bar-animate'); });
+  }
+
+  // ══════════════ FOLDER TABS (scroll to section) ══════════════
+  var tabs = document.querySelectorAll('.folder-tab');
+  tabs.forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      var targetId = this.getAttribute('data-target');
+      var targetEl = document.getElementById(targetId);
+      if (targetEl) {
+        targetEl.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+
+  // ══════════════ ACTIVE TAB ON SCROLL ══════════════
+  var sectionIds = ['landing', 'identity', 'projects', 'metrics', 'timeline', 'skills', 'contact'];
+  window.addEventListener('scroll', function() {
+    var scrollY = window.scrollY + 250;
+    for (var i = 0; i < sectionIds.length; i++) {
+      var el = document.getElementById(sectionIds[i]);
+      if (!el) continue;
+      if (scrollY >= el.offsetTop && scrollY < el.offsetTop + el.offsetHeight) {
+        tabs.forEach(function(t) { t.classList.remove('active'); });
+        // tabs[0] = identity, but landing doesn't have a matching tab index
+        // tabs map: 0=identity, 1=projects, 2=metrics, 3=timeline, 4=skills, 5=contact
+        var tabIndex = i - 1; // skip landing
+        if (tabIndex >= 0 && tabIndex < tabs.length) {
+          tabs[tabIndex].classList.add('active');
+        }
+      }
+    }
+  }, { passive: true });
+
+  // ══════════════ NAV HIDE ON SCROLL DOWN ══════════════
+  var lastScrollY = 0;
+  var nav = document.getElementById('main-nav');
+  window.addEventListener('scroll', function() {
+    var current = window.scrollY;
+    if (nav) {
+      if (current > lastScrollY && current > 100) {
+        nav.classList.add('nav-hidden');
+      } else {
+        nav.classList.remove('nav-hidden');
+      }
+    }
+    lastScrollY = current;
+  }, { passive: true });
+
+  // ══════════════ NAV SMOOTH SCROLL ══════════════
+  var navLinks = document.querySelectorAll('.nav-links a');
+  navLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      var target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  // ══════════════ GATE CHIP STAGGER ══════════════
+  var gateVisual = document.getElementById('gateVisual');
+  if (gateVisual && 'IntersectionObserver' in window) {
+    var gateObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var chips = entry.target.querySelectorAll('.gate-chip');
+          chips.forEach(function(chip, i) {
+            setTimeout(function() { chip.classList.add('chip-active'); }, i * 180);
+          });
+          gateObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    gateObserver.observe(gateVisual);
+  }
+
+  // ══════════════ PARALLAX ON LANDING ══════════════
+  var landing = document.getElementById('landing');
+  window.addEventListener('scroll', function() {
+    if (landing) {
+      var scrolled = window.scrollY;
+      if (scrolled < window.innerHeight) {
+        landing.style.transform = 'translateY(' + (scrolled * 0.12) + 'px)';
+        landing.style.opacity = Math.max(0, 1 - scrolled / (window.innerHeight * 0.75));
+      }
+    }
+  }, { passive: true });
+
+    // ══════════════ CGPA BAR FILL ══════════════
+  var cgpaFill = document.getElementById('cgpaFill');
+  var cgpaMarker = document.getElementById('cgpaMarker');
+  if (cgpaFill && cgpaMarker) {
+    setTimeout(function() {
+      cgpaFill.style.width = '91%';
+      cgpaMarker.style.left = '91%';
+    }, 1500);
+  }
+
+    // ══════════════ CERTIFICATE MODAL ══════════════
+  var certModal = document.getElementById('certModal');
+  var certModalBody = document.getElementById('certModalBody');
+  var certModalTitle = document.getElementById('certModalTitle');
+  var certModalClose = document.getElementById('certModalClose');
+  var certModalBackdrop = document.getElementById('certModalBackdrop');
+
+  if (certModal && certModalBody) {
+    var certCards = document.querySelectorAll('[data-cert]');
+    certCards.forEach(function(card) {
+      card.addEventListener('click', function() {
+        var fileSrc = this.getAttribute('data-cert');
+        var title = this.getAttribute('data-cert-title');
+        var isPDF = fileSrc.toLowerCase().endsWith('.pdf');
+
+        certModalTitle.textContent = title;
+
+        // Clear previous content
+        certModalBody.innerHTML = '';
+
+        if (isPDF) {
+          // Create iframe for PDF
+          var iframe = document.createElement('iframe');
+          iframe.src = fileSrc;
+          iframe.className = 'cert-modal-pdf';
+          iframe.title = title;
+          iframe.setAttribute('loading', 'lazy');
+          certModalBody.appendChild(iframe);
+
+          // Also add a fallback download link
+          var fallback = document.createElement('a');
+          fallback.href = fileSrc;
+          fallback.target = '_blank';
+          fallback.className = 'cert-fallback-link';
+          fallback.textContent = 'Can\'t see it? Open PDF directly →';
+          certModalBody.appendChild(fallback);
+        } else {
+          // Create img for images
+          var img = document.createElement('img');
+          img.src = fileSrc;
+          img.alt = title;
+          img.className = 'cert-modal-img';
+          certModalBody.appendChild(img);
+        }
+
+        certModal.classList.add('cert-modal-open');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    function closeCertModal() {
+      certModal.classList.remove('cert-modal-open');
+      document.body.style.overflow = '';
+      setTimeout(function() {
+        certModalBody.innerHTML = '';
+      }, 350);
+    }
+
+    certModalClose.addEventListener('click', closeCertModal);
+    certModalBackdrop.addEventListener('click', closeCertModal);
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && certModal.classList.contains('cert-modal-open')) {
+        closeCertModal();
+      }
+    });
+  }
+
+  // ══════════════ METRICS PROGRESS BAR ══════════════
+  var mProgressFills = document.querySelectorAll('.m-progress-fill');
+  if ('IntersectionObserver' in window && mProgressFills.length > 0) {
+    var mProgObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('m-progress-animate');
+          mProgObserver.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    mProgressFills.forEach(function(el) { mProgObserver.observe(el); });
+  }
+
+})();
+</script>
+
+</body>
+</html>
