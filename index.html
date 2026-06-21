@@ -150,8 +150,8 @@
         <p class="identity-desc">First-year B.Tech CSE (Data Science) student operating entirely outside the campus-placement ecosystem. My niche is Cyber Adversarial Analytics — ML and cybersecurity treated not as separate fields, but as a unified craft aimed at predictive threat interception.</p>
         <div class="status-ticker">
           <div class="ticker-header">// Live Status</div>
-          <div class="ticker-row"><span class="ticker-dot"></span><span class="ticker-label">Building</span><span class="ticker-val">Anomaly Hunter — CIC-IDS2017 upgrade</span></div>
-          <div class="ticker-row"><span class="ticker-dot amber"></span><span class="ticker-label">Reading</span><span class="ticker-val">CIC-IDS2017 dataset documentation</span></div>
+          <div class="ticker-row"><span class="ticker-dot"></span><span class="ticker-label">Deployed</span><span class="ticker-val">NEITH — AI-powered NIDS with GNN + MITRE ATT&CK</span></div>
+<div class="ticker-row"><span class="ticker-dot amber"></span><span class="ticker-label">Live at</span><span class="ticker-val">neith-green.vercel.app</span></div>
           <div class="ticker-row"><span class="ticker-dot dim"></span><span class="ticker-label">Target</span><span class="ticker-val">GSoC 2027 — OWASP / Honeynet Project</span></div>
           <div class="ticker-row"><span class="ticker-dot dim"></span><span class="ticker-label">Target</span><span class="ticker-val">IEEE ICCCE research publication</span></div>
         </div>
@@ -169,7 +169,7 @@
             <div class="stat-glow"></div>
           </div>
           <div class="stat-card">
-            <span class="stat-num" data-counter="true" data-target="6" data-suffix="">0</span>
+            <span class="stat-num" data-counter="true" data-target="7" data-suffix="">0</span>
             <span class="stat-unit">Security systems built</span>
             <div class="stat-glow"></div>
           </div>
@@ -203,12 +203,65 @@
     <div class="section-label"><span class="label-num">03</span> <span class="label-text">Projects</span></div>
     <div class="section-line"></div>
 
-    <!-- NIDS -->
+    <!-- NEITH -->
     <div class="project-card reveal">
       <div class="project-glow"></div>
       <div class="project-header">
         <div>
           <div class="project-number">01</div>
+          <div class="project-title">NEITH</div>
+          <div class="project-subtitle">Network Entity Intelligence & Threat Hunter · AI-Powered NIDS</div>
+        </div>
+        <div class="project-tags">
+          <span class="tag">GraphSAGE</span><span class="tag">GNN</span><span class="tag">Scapy</span><span class="tag">MITRE ATT&CK</span><span class="tag">Next.js</span><span class="tag">Flask</span><span class="tag">Conformal Prediction</span>
+        </div>
+      </div>
+      <div class="project-metrics">
+        <div class="metric">
+          <span class="metric-val">83.5%</span>
+          <span class="metric-label">GNN Accuracy</span>
+          <div class="metric-bar"><div class="metric-fill" style="--fill-width:83.5%"></div></div>
+        </div>
+        <div class="metric"><span class="metric-val">28</span><span class="metric-label">CICIDS Features</span></div>
+        <div class="metric"><span class="metric-val">10s</span><span class="metric-label">Capture Cycle</span></div>
+        <div class="metric"><span class="metric-val">9</span><span class="metric-label">ATT&CK Techniques</span></div>
+      </div>
+      <p class="project-desc">AI-powered Network Intrusion Detection System named after the Egyptian goddess who wove the fabric of reality. Captures live network traffic every 10 seconds via Scapy, computes 28 CICIDS-aligned features per IP, builds a real-time graph of devices and connections, and runs it through a trained GraphSAGE GNN to flag anomalous behavior. Detects attack patterns it has never seen before by learning what normal looks like.</p>
+      <div class="arch-row">
+        <span class="arch-input">Scapy Capture</span><span class="arch-arrow">→</span>
+        <span class="arch-node">28 Features/IP</span><span class="arch-arrow">→</span>
+        <span class="arch-node">Graph Builder</span><span class="arch-arrow">→</span>
+        <span class="arch-node">GraphSAGE GNN</span><span class="arch-arrow">→</span>
+        <span class="arch-node">Anomaly Score</span><span class="arch-arrow">→</span>
+        <span class="arch-node">MITRE Classifier</span><span class="arch-arrow">→</span>
+        <span class="arch-node arch-output">Dashboard</span>
+      </div>
+      <div class="project-insight">
+        <div class="insight-label">⟐ Architecture Highlights</div>
+        MITRE ATT&CK mapping across 9 techniques and 6 tactics. 90% Conformal Prediction confidence intervals — distribution-free uncertainty quantification. ADWIN drift detection monitors when network behavior shifts. SQLite persistence ensures alerts survive restarts. Reverse DNS + behavior-based role inference turns raw IPs into "github.com / external". Custom Egyptian war room dashboard — UnifrakturMaguntia, Cinzel, sacred geometry, zero rounded corners.
+      </div>
+      <div class="mode-grid">
+        <div class="mode-card mode-safe">
+          <div class="mode-title"><span class="mode-dot-safe"></span> Live Mode</div>
+          <div class="mode-desc">Real packet capture via Scapy with sudo privileges. 28 CICIDS features computed from raw traffic. Full GNN inference pipeline with StandardScaler alignment to training distribution.</div>
+        </div>
+        <div class="mode-card mode-lost">
+          <div class="mode-title"><span class="mode-dot-lost"></span> Demo Mode</div>
+          <div class="mode-desc">Generates realistic synthetic enterprise LAN data. Visitors experience NEITH working without root privileges or live capture. Deployed publicly on Vercel.</div>
+        </div>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/ruushhdaa/NEITH" target="_blank" rel="noopener noreferrer" class="proj-btn primary">→ GitHub</a>
+        <a href="https://neith-green.vercel.app" target="_blank" rel="noopener noreferrer" class="proj-btn">Live Dashboard</a>
+      </div>
+    </div>
+
+    <!-- NIDS -->
+    <div class="project-card reveal">
+      <div class="project-glow"></div>
+      <div class="project-header">
+        <div>
+          <div class="project-number">02</div>
           <div class="project-title">NIDS Deep Learning Engine</div>
           <div class="project-subtitle">Network Intrusion Detection System · CT Lab Final Project</div>
         </div>
@@ -253,7 +306,7 @@
       <div class="project-glow"></div>
       <div class="project-header">
         <div>
-          <div class="project-number">02</div>
+          <div class="project-number">03</div>
           <div class="project-title">SATARK</div>
           <div class="project-subtitle">Smart Active Tracking And Recovery Key · Design Thinking Lab</div>
         </div>
@@ -286,7 +339,7 @@
       <div class="project-glow"></div>
       <div class="project-header">
         <div>
-          <div class="project-number">03</div>
+          <div class="project-number">04</div>
           <div class="project-title">TrustSentinel</div>
           <div class="project-subtitle">Live UPI Fraud Detection Engine · Datathon 2026</div>
         </div>
@@ -319,7 +372,7 @@
       <div class="project-glow"></div>
       <div class="project-header">
         <div>
-          <div class="project-number">04</div>
+          <div class="project-number">05</div>
           <div class="project-title">SHURI</div>
           <div class="project-subtitle">LAN IoT Threat Detection · VELORA 1.0 — April 2026</div>
         </div>
@@ -342,7 +395,7 @@
       <div class="project-glow"></div>
       <div class="project-header">
         <div>
-          <div class="project-number">05</div>
+          <div class="project-number">06</div>
           <div class="project-title">Logic Gate Architecture</div>
           <div class="project-subtitle">Digital Electronics Engineering · Hardware Lab Project</div>
         </div>
@@ -405,7 +458,7 @@
       <div class="project-glow"></div>
       <div class="project-header">
         <div>
-          <div class="project-number">06</div>
+          <div class="project-number">07</div>
           <div class="project-title">This Portfolio</div>
           <div class="project-subtitle">Custom Digital Portfolio · Pure HTML/CSS/JS</div>
         </div>
@@ -455,7 +508,7 @@
         <div class="m-bg-text" aria-hidden="true">6</div>
         <div class="m-num" data-counter="true" data-target="6" data-suffix="">0</div>
         <div class="m-label">Systems Built</div>
-        <div class="m-sublabel">NIDS · SATARK · TrustSentinel · SHURI · DEE · Portfolio</div>
+        <div class="m-sublabel">NEITH · NIDS · SATARK · TrustSentinel · SHURI · DEE · Portfolio</div>
         <div class="metrics-cell-glow"></div>
       </div>
       <div class="metrics-cell reveal reveal-delay-3">
@@ -483,6 +536,15 @@
     <div class="section-line"></div>
 
     <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-date">2026</div>
+        <div class="timeline-body">
+          <div class="timeline-title">NEITH — AI-Powered NIDS</div>
+          <div class="timeline-org">GraphSAGE GNN · MITRE ATT&CK · Deployed on Vercel</div>
+          <div class="timeline-desc">Built and deployed a full AI-powered Network Intrusion Detection System with live packet capture, Graph Neural Network inference, MITRE ATT&CK classification, conformal prediction, and a custom Egyptian-themed dashboard.</div>
+          <span class="timeline-outcome outcome-success">Deployed · Live</span>
+        </div>
+      </div>
       <div class="timeline-item reveal">
         <div class="timeline-date">Apr 2026</div>
         <div class="timeline-body">
@@ -601,6 +663,10 @@
           <div class="skill-item">SMOTE (Class Balancing)</div>
           <div class="skill-item">Random Forest · 1D CNN</div>
           <div class="skill-item">Isolation Forests</div>
+          <div class="skill-item">Graph Neural Networks (GNN)</div>
+<div class="skill-item">GraphSAGE</div>
+<div class="skill-item">Conformal Prediction</div>
+<div class="skill-item">Scapy (Packet Capture)</div>
         </div>
       </div>
       <div class="skill-group reveal reveal-delay-1">
@@ -612,6 +678,8 @@
           <div class="skill-item">OWASP IoT Top 10</div>
           <div class="skill-item">CVE Mapping</div>
           <div class="skill-item">Threat Intelligence</div>
+          <div class="skill-item">ADWIN Drift Detection</div>
+<div class="skill-item">Reverse DNS Analysis</div>
         </div>
       </div>
       <div class="skill-group reveal reveal-delay-2">
@@ -633,6 +701,9 @@
           <div class="skill-item">Git · GitHub</div>
           <div class="skill-item">Linux WSL</div>
           <div class="skill-item">Google Colab</div>
+          <div class="skill-item">Docker</div>
+          <div class="skill-item">Next.js</div>
+          <div class="skill-item">Vercel</div>
         </div>
       </div>
     </div>
