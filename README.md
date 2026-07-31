@@ -17,15 +17,15 @@
 
 ## About
 
-This repository contains my personal digital portfolio — a hand-coded, interactive site built to present my work in **Cyber Adversarial Analytics**, the intersection of machine learning and cybersecurity.
+This repository contains my personal digital portfolio.
 
-The portfolio showcases my projects, certifications, hackathon archive, technical direction, and professional presence in a single live, deployable space.
+It showcases my projects, certifications, hackathon archive, technical direction, and professional presence in a single live, deployable space.
 
 **Current academic snapshot:**
 - **Program:** B.Tech CSE (Data Science)
 - **Institution:** MITAOE, Pune
 - **Current CGPA:** 8.9 / 10.0
-- **Stage:** First Year
+- **Stage:** Second Year
 - **Validity:** 2025 thru 2029
 
 ---
@@ -36,11 +36,11 @@ The portfolio showcases my projects, certifications, hackathon archive, technica
 |---|---------|-------------|------------|
 | 01 | **NEITH** | AI-powered NIDS with GraphSAGE GNN, MITRE ATT&CK mapping, live packet capture | 83.5% GNN accuracy · 28 features · Deployed |
 | 02 | **NIDS Deep Learning Engine** | 1D CNN classifying network traffic to catch zero-day attacks | 99.91% accuracy · 156K params |
-| 03 | **SATARK** | Smart PVC card with honeypot trap + air-gap privacy modes | PCMC Police shortlisted |
+| 03 | **SATARK** | Smart PVC card with honeypot trap + air-gap privacy modes | Python Flask backend + Dyanamic QR |
 | 04 | **TrustSentinel** | UPI fraud detection with per-card behavioral profiling | 98% on 590K transactions |
 | 05 | **SHURI** | LAN IoT threat detection with Blast Radius scoring | Zero cloud dependency |
 | 06 | **Logic Gate Architecture** | Hardware-level 7400-series IC implementation | All fundamental gates |
-| 07 | **This Portfolio** | Hand-coded with Canvas particles, custom cursor, zero frameworks | Pure HTML/CSS/JS |
+| 07 | **This Portfolio** | Built using Canvas particles, custom cursor, zero frameworks | Pure HTML/CSS/JS |
 
 ---
 
@@ -74,6 +74,8 @@ This portfolio is built with **zero frameworks** — pure vanilla code.
 - **NASSCOM x MeitY** — Digital Engineering 101
 - **Cisco** — Python Essentials 1 and 2
 - **Anthropic** — AI Fluency Suite
+- **Cisco** — Data Analytic
+- **Cisco** — Junior Cybersecurity Analyst Career Path Exam
 
 ---
 
@@ -81,9 +83,8 @@ This portfolio is built with **zero frameworks** — pure vanilla code.
 
 | Event | Project Pitched | Outcome |
 |-------|----------------|---------|
-| VELORA 1.0 (Apr 2026) | SHURI | Presented |
-| Nigarani — PCMC Police | TrustSentinel + SHURI | Shortlisted |
-| Datathon 2026 | TrustSentinel | Lost R1 |
+| VELORA 1.0 (Apr 2026) | SHURI |
+| Datathon 2026 | TrustSentinel | 
 
 ---
 
@@ -103,6 +104,8 @@ This portfolio is built with **zero frameworks** — pure vanilla code.
         ├── ibm-ai-fundamentals.pdf
         ├── nasscom-digital-engineering.pdf
         └── velora-participation.pdf
+        ├── Junior-Cybersecurity-Analyst-All-Courses.pdf
+        └── Data-Analytics-All-3.pdf
 
 ---
 
@@ -111,7 +114,7 @@ This portfolio is built with **zero frameworks** — pure vanilla code.
     git clone https://github.com/ruushhdaa/digital-portfolio.git
     cd digital-portfolio
 
-Open index.html in your browser. No build tools. No npm install. No dependencies. Just code.
+Open index.html in your browser. No build tools. No npm install. No dependencies.
 
 ---
 
